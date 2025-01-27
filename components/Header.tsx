@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between">
+    <header className="flex flex-row justify-between py-5">
         <div className="text-4xl font-bold">|corcordan|</div>
         <div className="flex flex-row text-lg gap-5">
             <div className="">Home</div>
