@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="flex flex-row justify-between py-5">
+    <header className="flex flex-row justify-between py-5 px-10">
         <div className="text-4xl font-bold">|corcordan|</div>
-        <div className="flex flex-row text-lg gap-5">
+        <div className="flex flex-row text-lg gap-5 items-center">
             <div className="">Home</div>
             <div className="">About</div>
             <div>Resume</div>
