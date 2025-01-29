@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <div className="flex flex-col px-80 py-10">
-        <h1 className="text-xl text-center p-5">ABOUT ME</h1>
-        <div className="space-y-5">
+        <h1 className="text-xl text-center p-5 text-blue-300 font-bold">ABOUT ME</h1>
+        <div className="space-y-5 text-white">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque lacus in aliquam vehicula. In sollicitudin, erat nec dapibus aliquam, ligula libero convallis dui, vitae imperdiet mi lectus id lectus. Aliquam varius turpis at est pretium iaculis. Nam vitae nibh justo. Quisque eleifend finibus augue. Nunc gravida leo sapien, nec viverra risus rhoncus sit amet. Mauris vitae nunc felis. Sed non erat finibus, maximus ligula at, ullamcorper nibh. Vestibulum nec magna at nunc pellentesque finibus vitae pulvinar ligula. Donec vestibulum libero pharetra tellus efficitur, a aliquet nisi consectetur. Integer non ipsum leo. Cras dignissim velit quis elementum semper. Pellentesque neque sapien, sagittis vitae ex in, molestie sollicitudin elit.</p>
 
             <p>Proin fringilla elementum nibh ac finibus. Integer hendrerit ex at tristique aliquet. In finibus ornare quam, dignissim faucibus purus ullamcorper nec. Duis blandit mauris id mattis fermentum. Integer nec sagittis ligula. Sed ut ornare urna, ut ultrices massa. Vestibulum ultricies pulvinar felis, a ultrices libero accumsan in. Praesent ut consequat dui. Phasellus auctor velit tortor, a vestibulum mi rhoncus sed. Pellentesque porttitor mattis ex quis cursus.</p>
