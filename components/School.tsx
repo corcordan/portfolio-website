@@ -18,7 +18,9 @@ const School = ({name, location, degree, major, minor, graduation, gpa, honors, 
     <div className="p-5 my-10 mx-5 bg-blue-950 text-white rounded-lg">
         <h1>{name}, {location}</h1>
         <h2>{degree} in {major}, ({graduation})</h2>
-        <h3>{minor}, {gpa}, {honors}, {programs}, {courses}</h3>
+        <h3>{programs.join(", ")}, {honors}, {gpa}</h3>
+        <h3>Minors: {minor.join(", ")}</h3>
+        <h3>Courses: {courses.join(", ")}</h3>
     </div>
   )
 }

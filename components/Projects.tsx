@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col px-40 py-10 bg-blue-950">
       <h1 className="text-3xl text-center p-5 text-blue-300 font-bold">PROJECTS</h1>
-      <div className="grid grid-cols-2">
+      <div className="grid lg:grid-cols-2 md:grid-cols-1">
         <Project
           title="Portfolio Website"
           link="https://www.github.com/corcordan/portfolio-website"
