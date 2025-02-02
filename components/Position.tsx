@@ -1,17 +1,17 @@
 import React from 'react'
 
-type JobProps = {
+type PositionProps = {
     title: string;
-    company: string;
+    organization: string;
     location: string;
     dates: string;
     responsibilities: string[];
 }
 
-const Job = ({title, company, location, dates, responsibilities}: JobProps) => {
+const Position = ({title, organization, location, dates, responsibilities}: PositionProps) => {
   return (
     <div className="p-5 md:my-10 my-5 mx-5 bg-blue-950 text-white rounded-lg">
-        <h2>{title} at {company}</h2>
+        <h2>{title} at {organization}</h2>
         <p>{location}, {dates}</p>
         <ul>
             {responsibilities.map(o => <li key={o}>- {o}</li>)}
@@ -20,4 +20,4 @@ const Job = ({title, company, location, dates, responsibilities}: JobProps) => {
   )
 }
 
-export default Job
+export default Position

@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="flex flex-col lg:px-96 md:px-40 sm:px-40 py-10">
+    <div id="about" className="flex flex-col lg:px-96 md:px-40 sm:px-40 py-10">
         <h1 className="text-3xl text-center p-5 text-blue-300 font-bold">ABOUT ME</h1>
         <div className="space-y-5 text-white">
             <p>Hi, I&apos;m Daniel Corcoran, a recent graduate from Christopher Newport University with a degree in Computer Science and minors in Business Administration and Leadership Studies. I graduated in the Honors Program and am passionate about AI/ML, Data Science, and software development. I&apos;m excited to start my career and explore opportunities in Software Engineering, Data Engineering, or AI Engineering.</p>

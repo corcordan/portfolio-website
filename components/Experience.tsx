@@ -14,10 +14,12 @@ const Experience = () => {
                 location="Remote"
                 dates="06/2024 - 12/2024"
                 responsibilities={[
-                    "Spearheaded the creation of ISO 9001-compliant quality management processes using Office 365, enhancing efficiency, consistency, and quality of deliverables, and successful certification.",
-                    "Collaborated with senior leaders to design and implement CMMI Level 3 processes within a DevOps environment, leveraging Azure DevOps for sprint planning and execution, directly contributing to the organization's successful CMMI certification.",
-                    "Facilitated company-wide adoption of new processes through training sessions, communication strategies, and performance measurement tools.",
-                    "Played a critical role in ISO and CMMI certification audits by developing artifacts, ensuring compliance, and achieving organizational certification milestones."
+                    "Spearheaded the creation and refinement of ISO 9001-compliant quality management processes using Office 365, enhancing efficiency, consistency, and quality of deliverables, leading to successful certification.",
+                    "Partnered with senior leadership across departments to design and implement CMMI Level 3 processes within a DevOps environment, leveraging Azure DevOps for sprint planning and execution, ensuring alignment with organizational goals and process improvements.",
+                    "Facilitated the company-wide adoption of new processes through comprehensive training sessions, communication strategies, and performance measurement tools, ensuring seamless integration and operational improvement.",
+                    "Worked closely with application development leaders to embed CMMI best practices in continuous integration and delivery (CI/CD) environments, improving software development workflows.",
+                    "Developed and standardized CMMI process artifacts, including process models, templates, and measurement tools to track performance and compliance.",
+                    "Played a critical role in ISO 9001 and CMMI certification audits, developing necessary documentation, ensuring compliance, and directly contributing to the organization's successful certification milestones."
                 ]} 
             />
             <Job

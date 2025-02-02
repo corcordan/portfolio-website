@@ -11,6 +11,19 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        tan: {
+          DEFAULT: '#FEEFDD'
+        },
+        brown: {
+          DEFAULT: '#957964'
+        },
+        blue: {
+          100: '#457EAC',
+          200: '#2D5D7B'
+        },
+        gray: {
+          DEFAULT: '#303036'
+        }
       },
     },
   },
