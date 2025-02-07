@@ -7,6 +7,17 @@ const Projects = () => {
       <h1 className="text-3xl text-center p-5 text-blue-300 font-bold">PROJECTS</h1>
       <div className="grid lg:grid-cols-2 md:grid-cols-1">
         <Project
+          title="Stock Market Data Analysis"
+          link="https://www.github.com/corcordan/stock-data"
+          desc="A data analysis of difference metrics in the stock market. WORK IN PROGRESS."
+          tech={[
+            "Python",
+            "yfinance",
+            "pandas",
+            "Matplotlib"
+          ]}
+        />
+        <Project
           title="Portfolio Website"
           link="https://www.github.com/corcordan/portfolio-website"
           desc="The website you are on currently. WORK IN PROGRESS."
