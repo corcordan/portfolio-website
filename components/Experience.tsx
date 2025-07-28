@@ -8,6 +8,16 @@ const Experience = () => {
             <h1 className="text-blue-950 p-5 underline text-xl font-bold uppercase">Work Experience</h1>
         </div>
         <div>
+            <Job 
+                title="Software Developer"
+                company="Jibez"
+                location="Remote"
+                dates="02/2025 - Current"
+                responsibilities={[
+                    "Created the main web page for Jibez using Next.js",
+                    "Currently working on a web app called Weather2Go that is a dynamic weather app specifically for trips. Creating it with Next.js and Supabase"
+                ]}
+            />
             <Job
                 title="Consultant"
                 company="Broadleaf Services"

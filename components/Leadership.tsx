@@ -19,9 +19,6 @@ const Leadership = () => {
                     "Managed the Balanced Man Program, guiding members through three stages: fraternity growth, personal development, and leadership training.",
                     "Coordinated speaker events and Sound Mind & Sound Body programs in collaboration with the university.",
                     "Worked with SigEp National Headquarters to ensure smooth chapter operations.",
-                    "Attended an executive board conference in Atlanta to strategize improvements with other leaders.",
-                    "Strengthened core fraternity values: Virtue, Diligence, and Brotherly Love, fostering a more unified chapter.",
-                    "Oversaw fraternity rituals, scheduling and organizing spaces for ceremonial events.",
                     "Hosted weekly development meetings to track progress and maintain chapter engagement."
                 ]}
             />
