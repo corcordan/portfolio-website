@@ -1,26 +1,24 @@
-import Image from "next/image";
+import About from "./components/about";
+import Experience from "./components/experience";
+import Hero from "./components/hero";
+import Links from "./components/links";
+import Projects from "./components/projects";
 
 export default function Home() {
-  const SIZE = 12
-  const grid: number[] = []
-  let count = 0
-  for (let i = 0; i < SIZE; i++) {
-    for (let j = 0; j < SIZE; j++) {
-      if (j !== 0 && j !== SIZE - 1 && i !== 0 && i !== SIZE - 1) {
-        grid.push(1)
-      }
-      else {
-        grid.push(0)
-      }
-    }
-    count += 1
-  }
 
   return (
-    <div className="h-dvh bg-[#252525]">
-      <div className="bg-[#3f5147] text-4xl font-bold text-center">
-        Welcome to my website!
+    <div className="h-dvh flex flex-col justify-center items-center relative">
+      {/*
+      <div className="fixed z-50 flex flex-col space-y-4 top-0 right-0 w-1/12 m-4">
+        <Minimap />
+        <ThemeToggle />
       </div>
+      */}
+      <Links />
+      <Hero />
+      <Experience />
+      <Projects />
     </div>
   );    
 }
+ 
