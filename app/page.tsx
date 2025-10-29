@@ -1,13 +1,13 @@
 'use client'
 
 import { useState } from "react";
-import Experience from "./components/experience";
+import Experience from "./components/Experience";
 import Intro from "./components/Intro";
-import Links from "./components/links";
-import Projects from "./components/projects";
+import Links from "./components/Links";
+import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
-import ThemeToggle from "./components/themetoggle";
+import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   const [isVert, setIsVert] = useState(true)
