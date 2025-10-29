@@ -1,5 +1,6 @@
 'use client'
 
+import { Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import React, { useEffect, useState } from 'react'
 
@@ -29,8 +30,14 @@ const ThemeToggle = () => {
     }
 
     return (
-        <div className="bg-coffee rounded-full w-10 h-10 p-2">
-            <button onClick={() => handleBtn()}>Hi</button>
+        <div className="rounded-full w-16 h-16 m-4 flex justify-center items-center transition-colors duration-1000" style={{ backgroundColor: "var(--background)" }}>
+            <button onClick={() => handleBtn()}>
+                {dark ? (
+                    <Sun width={40} height={40} />
+                ) : (
+                    <Moon width={40} height={40}/>
+                )}
+            </button>
         </div>
     )
 }
