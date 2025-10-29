@@ -7,7 +7,7 @@ import Links from "./components/links";
 import Projects from "./components/projects";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
-import ThemeToggle from "./components/themeToggle";
+import ThemeToggle from "./components/themetoggle";
 
 export default function Home() {
   const [isVert, setIsVert] = useState(true)
