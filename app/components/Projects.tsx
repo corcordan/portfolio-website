@@ -32,9 +32,17 @@ const Projects = () => {
           githubURL="https://github.com/corcordan/nn-from-scratch"
         />
       </Dropdown>
+
       <Dropdown
         text="Completed Projects"
       >
+        <ProjectTemplate
+          projectName="Jibez Website"
+          techStack={["React", "TypeScript", "Tailwind", "Next.js", "Vercel"]}
+          webURL="https://www.jibez.com/"
+        >
+
+        </ProjectTemplate>
         <ProjectTemplate
           projectName="StudyGo"
           techStack={["PHP", "MySQL", "Hostinger", "HTML", "CSS", "JavaScript"]}

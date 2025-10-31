@@ -48,8 +48,8 @@ const Links = ({ vertFunc, isVert }: LinksProps) => {
     
 
     return (
-        <div className={`flex ${linksFlex} p-2 h-full w-full`}>
-            <div className="text-lush text-4xl flex flex-row justify-between items-center relative">
+        <div className={`flex ${linksFlex} p-2 h-full w-full text-lg`}>
+            <div className="text-lush text-3xl flex flex-row justify-between items-center relative">
                 corcordan
                 <button
                     ref={buttonRef}
