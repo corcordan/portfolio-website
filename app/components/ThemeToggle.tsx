@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 const ThemeToggle = () => {
     const [mounted, setMounted] = useState(false)
     const [dark, setDark] = useState(false)
-    const { theme, setTheme } = useTheme()
+    //const { theme, setTheme } = useTheme()
 
     // useEffect only runs on the client, so now we can safely show the UI
     useEffect(() => {
@@ -17,7 +17,7 @@ const ThemeToggle = () => {
     if (!mounted) {
         return null
     }
-
+    /*
     const handleBtn = () => {
         if (dark) {
             setTheme('light')
@@ -28,7 +28,7 @@ const ThemeToggle = () => {
             setDark(true)
         }
     }
-
+    
     return (
         <div className="rounded-full w-16 h-16 m-4 flex justify-center items-center transition-colors duration-1000" style={{ backgroundColor: "var(--background)" }}>
             <button onClick={() => handleBtn()}>
@@ -40,6 +40,7 @@ const ThemeToggle = () => {
             </button>
         </div>
     )
+    */
 }
 
 export default ThemeToggle

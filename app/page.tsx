@@ -1,13 +1,6 @@
 'use client'
 
-import { useState } from "react";
-import Experience from "./components/Experience";
 import Intro from "./components/Intro";
-import Links from "./components/Links";
-import Projects from "./components/Projects";
-import Education from "./components/Education";
-import Skills from "./components/Skills";
-import ThemeToggle from "./components/ThemeToggle";
 import Navbar from "./components/Navbar";
 import Map from "./components/Map";
 import ProjectsIntro from "./components/ProjectsIntro";

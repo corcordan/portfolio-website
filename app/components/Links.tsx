@@ -1,7 +1,7 @@
 'use client'
 
-import { Copy, CopyCheck, EllipsisVertical, FileCheck, FileDown, FileUser, Github, Linkedin, Mail, PanelLeftClose, PanelTopClose, Phone } from 'lucide-react'
-import React, { useEffect, useRef, useState } from 'react'
+import { FileUser, Github, Linkedin, Mail } from 'lucide-react'
+import React, { useEffect, useState } from 'react'
 import LinkPill from './LinkPill'
 
 type LinksProps = {
@@ -10,15 +10,15 @@ type LinksProps = {
 
 const Links = ({ openLinks }: LinksProps) => {
     const [linkOpened, setLinkOpened] = useState("")
-    const [isCopied, setIsCopied] = useState(false)
-    const [isDown, setIsDown] = useState(false)
+    //const [isCopied, setIsCopied] = useState(false)
+    //const [isDown, setIsDown] = useState(false)
 
     useEffect(() => {
         if (openLinks) setLinkOpened("Resume")
     }, [openLinks])
 
-    const textToCopy = "corcordan@gmail.com"
-
+    //const textToCopy = "corcordan@gmail.com"
+    /*
     const handleCopy = async () => {
         try {
             await navigator.clipboard.writeText(textToCopy)
@@ -27,7 +27,7 @@ const Links = ({ openLinks }: LinksProps) => {
             console.error("Failed to copy text:", err)
         }
     }
-
+    */
     return (
         <div className={`flex flex-row h-full text-sm space-x-2`}>
             <LinkPill 

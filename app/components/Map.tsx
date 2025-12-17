@@ -25,7 +25,7 @@ const Map = () => {
     elem.style.border = "2px solid white"
     elem.style.boxSizing = "border-box"
 
-    const marker = new Marker({ element: elem })
+    new Marker({ element: elem })
       .setLngLat([-70.8955, 42.5180])
       .addTo(map)
 

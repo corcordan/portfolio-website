@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 
 const Career = () => {
-    const [toggle, setToggle] = useState(true) // true -> left/experience, false -> right/education
+    const [toggle] = useState(true) // true -> left/experience, false -> right/education
     return (
         <div>
             <div></div>
