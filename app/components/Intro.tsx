@@ -1,34 +1,24 @@
 'use client'
 
-import React from 'react'
-import Dropdown from './Dropdown'
-import Bullet from './Bullet'
-import { Briefcase, Lightbulb, MapPin } from 'lucide-react'
+import React, { useState } from 'react'
+import Links from './Links'
 
 const Intro = () => {
-
+    const [openLinks, setOpenLinks] = useState(false)
     return (
-        <Dropdown
-            text="Introduction"
-            isOpen={false}
+        <div 
+            onMouseEnter={() => setOpenLinks(true)}
+            className="flex flex-col w-full my-4"
         >
-            <Dropdown
-                text="Daniel Corcoran"
-            >
-                <Bullet>
-                    <Briefcase />
-                    <p className="text-2xl">Software Engineer</p>
-                </Bullet>
-                <Bullet>
-                    <Lightbulb />
-                    <p className="text-2xl">Web and AI/ML</p>
-                </Bullet>
-                <Bullet>
-                    <MapPin />
-                    <p className="text-2xl">Salem, Massachusetts</p>
-                </Bullet>
-            </Dropdown>
-        </Dropdown>
+            <p className="text-3xl">Hello,</p>
+            <div className="flex flex-row justify-between items-center text-nowrap">
+                <p className="text-3xl">I'm Daniel</p>
+                <Links 
+                    openLinks={openLinks}
+                />
+            </div>
+            <p className="text-xl">I'm a software engineer interested in web development & AI/ML</p>
+        </div>
     )
 }
 

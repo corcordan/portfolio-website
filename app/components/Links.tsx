@@ -1,24 +1,23 @@
 'use client'
 
-import { Copy, CopyCheck, EllipsisVertical, FileCheck, FileDown, Github, Linkedin, PanelLeftClose, PanelTopClose } from 'lucide-react'
+import { Copy, CopyCheck, EllipsisVertical, FileCheck, FileDown, FileUser, Github, Linkedin, Mail, PanelLeftClose, PanelTopClose, Phone } from 'lucide-react'
 import React, { useEffect, useRef, useState } from 'react'
+import LinkPill from './LinkPill'
 
 type LinksProps = {
-    vertFunc: (bool: boolean) => void;
-    isVert: boolean;
+    openLinks: boolean
 }
 
-const Links = ({ vertFunc, isVert }: LinksProps) => {
+const Links = ({ openLinks }: LinksProps) => {
+    const [linkOpened, setLinkOpened] = useState("")
     const [isCopied, setIsCopied] = useState(false)
     const [isDown, setIsDown] = useState(false)
-    const [openPopUp, setOpenPopUp] = useState(false)
 
-    const popupRef = useRef<HTMLDivElement>(null)
-    const buttonRef = useRef<HTMLButtonElement>(null)
+    useEffect(() => {
+        if (openLinks) setLinkOpened("Resume")
+    }, [openLinks])
 
     const textToCopy = "corcordan@gmail.com"
-
-    const linksFlex = isVert ? "flex-col space-y-4" : "flex-row space-x-4"
 
     const handleCopy = async () => {
         try {
@@ -29,50 +28,37 @@ const Links = ({ vertFunc, isVert }: LinksProps) => {
         }
     }
 
-    useEffect(() => {
-        function handleClickOutside(event: MouseEvent) {
-            const target = event.target as Node
-            if (popupRef.current && !popupRef.current.contains(target) && buttonRef.current && !buttonRef.current.contains(target)) {
-                setOpenPopUp(false)
-            }
-        }
-
-        if (openPopUp) {
-            document.addEventListener("mousedown", handleClickOutside);
-        }
-
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, [openPopUp]);
-    
-
     return (
-        <div className={`flex ${linksFlex} p-2 h-full w-full text-lg`}>
-            <div className="text-lush text-3xl flex flex-row justify-between items-center relative">
-                corcordan
-                <button
-                    ref={buttonRef}
-                    onClick={() => setOpenPopUp(!openPopUp)}
-                >
-                    <EllipsisVertical />
-                </button>
-                {openPopUp &&
-                    <div ref={popupRef} className={`absolute bg-salt text-lush rounded-2xl shadow-2xl grid grid-cols-2 p-4 ${isVert ? "top-10" : "top-20"} -right-10`}>
-                        <button
-                            onClick={() => vertFunc(true)}
-                        >
-                            <PanelLeftClose />
-                        </button>
-                        <button
-                            onClick={() => vertFunc(false)}
-                        >
-                            <PanelTopClose />
-                        </button>
-                    </div>
-                }
-            </div>
+        <div className={`flex flex-row h-full text-sm space-x-2`}>
+            <LinkPill 
+                icon={<FileUser />}
+                text="Check out my resume!"
+                active={linkOpened === "Resume"}
+                onHover={() => setLinkOpened("Resume")}
+            />
 
+            <LinkPill 
+                icon={<Mail />}
+                text="Feel free to email me!"
+                active={linkOpened === "Email"}
+                onHover={() => setLinkOpened("Email")}
+            />
+
+            <LinkPill 
+                icon={<Linkedin />}
+                text="Go to my LinkedIn!"
+                active={linkOpened === "LinkedIn"}
+                onHover={() => setLinkOpened("LinkedIn")}
+            />
+
+            <LinkPill 
+                icon={<Github />}
+                text="Look at my GitHub!"
+                active={linkOpened === "GitHub"}
+                onHover={() => setLinkOpened("GitHub")}
+            />
+
+            {/*
             <button
                 className="flex space-x-1 w-fit items-center hover:cursor-pointer"
                 type="button"
@@ -109,6 +95,7 @@ const Links = ({ vertFunc, isVert }: LinksProps) => {
                 <Github />
                 <p>GitHub</p>
             </a>
+            */}
         </div>
     )
 }
