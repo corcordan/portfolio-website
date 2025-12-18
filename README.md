@@ -10,7 +10,8 @@ This project is my portfolio website that I created to show off what I have crea
 *This project is still in development*
 
 ## Demo Link
-Clicking the hyperlink below will take you to my portfolio website
+Clicking the hyperlink will take you to my portfolio website
+
 [Website Link](https://www.corcordan.com/)
 
 ## Tech Stack
