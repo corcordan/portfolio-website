@@ -2,12 +2,12 @@
 
 import { MoveRight } from 'lucide-react'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const ExperienceSnapshot = () => {
 	const [hoverResume, setHoverResume] = useState(false)
 
-	const toolClass = "bg-lush p-1.5 rounded shadow-lg transition-transform duration-300 ease-in-out hover:translate-y-1 text-sm cursor-default"
+	const toolClass = "bg-lush p-1.5 rounded shadow-lg transition-transform duration-300 ease-in-out hover:translate-y-1 text-sm cursor-default mb-2"
 
 	const tools = ["TypeScript", "Python", "React", "Next.js", "Supabase", " PostgreSQL", "Tailwind", "Framer Motion"]
 
@@ -24,9 +24,9 @@ const ExperienceSnapshot = () => {
 
 				<div className="flex flex-row space-x-2 mb-4">
 					<p className="text-xl">Tech:</p>
-					<div className="flex flex-row flex-wrap space-y-2 space-x-2">
-						{tools.map((tool) => (
-							<div key={tool} className={toolClass}>{tool}</div>
+					<div className="flex flex-row flex-wrap space-x-2">
+						{tools.map((tool, index) => (
+							<div key={index} className={toolClass}>{tool}</div>
 						))}
 					</div>
 				</div>

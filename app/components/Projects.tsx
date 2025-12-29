@@ -1,71 +1,65 @@
-import React from 'react'
-import Dropdown from './Dropdown'
-import ProjectTemplate from './ProjectTemplate'
-import Bullet from './Bullet'
+import ProjectTemplate from "./ProjectTemplate"
 
 const Projects = () => {
-  return (
-    <Dropdown
-      text="Projects"
-      isOpen={false}
-    >
-      <Dropdown
-        text="Ongoing Projects"
-      >
-        <ProjectTemplate
-          projectName="Portfolio Website"
-          techStack={["React", "Tailwind", "TypeScript", "Next.js", "CloudFlare Pages"]}
-          webURL="https://corcordan.com"
-          githubURL="https://github.com/corcordan/portfolio-website"
-        />
-        <ProjectTemplate
-          projectName="Weather2Go"
-          techStack={["React", "Tailwind", "TypeScript", "Next.js", "Supabase", "PostgreSQL", "GeoNames", "Leaflet.js", "OpenStreetMap", "Framer Motion", "WeatherAPI.com", "Vercel"]}
-        >
-          <Bullet>
-            <p>Project solely I am working on at Jibez. In Alpha stage</p>
-          </Bullet>
-        </ProjectTemplate>
-        <ProjectTemplate
-          projectName="Neural Network from Scratch"
-          techStack={["Python", "NumPy"]}
-          githubURL="https://github.com/corcordan/nn-from-scratch"
-        />
-      </Dropdown>
+	// Might move project data to a separate file or an array later
 
-      <Dropdown
-        text="Completed Projects"
-      >
-        <ProjectTemplate
-          projectName="Jibez Website"
-          techStack={["React", "TypeScript", "Tailwind", "Next.js", "Vercel"]}
-          webURL="https://www.jibez.com/"
-        >
+	return (
+		<div className="flex flex-col space-y-8">
+			<div className="flex flex-col space-y-4">
+				<p className="text-xl">Current Projects:</p>
+				<ProjectTemplate 
+					imageLink="/"
+					title="EpiShowed"
+					siteURL="https://epishowed.vercel.app/"
+					githubURL="https://github.com/corcordan/epishowed"
+					desc="Web app to view character data in TV series. Coming soon!"
+					tools={["React", "Next.js", "TypeScript", "Tailwind CSS", "TMDB API", "Lucide"]}
+				/>
+				<ProjectTemplate 
+					imageLink="/CorcordanPortfolio.png"
+					title="My Portfolio Website"
+					siteURL="https://www.corcordan.com/"
+					githubURL="https://github.com/corcordan/portfolio-website"
+					desc="My personal portfolio website to showcase my projects and experience. Blog to be added in the future."
+					tools={["React", "Next.js", "TypeScript", "Tailwind CSS", "Maplibre GL", "Lucide"]}
+				/>
+				<ProjectTemplate 
+					imageLink="/MNISTData.jpg"
+					title="MNIST Digit Classifier from Scratch"
+					githubURL="https://github.com/corcordan/nn-from-scratch"
+					desc="Built a CNN from scratch to pick a number based on images provided by the MNIST Digit dataset. Only Python and NumPy were used, pandas was used for data handling."
+					tools={["Python", "NumPy", "Pandas"]}
 
-        </ProjectTemplate>
-        <ProjectTemplate
-          projectName="StudyGo"
-          techStack={["PHP", "MySQL", "Hostinger", "HTML", "CSS", "JavaScript"]}
-          webURL="https://studygoonline.com/"
-        >
-          <Bullet>
-            <p>
-              Final capstone project for the Computer Science major. Worked in a group of 3.
-              I worked only on the web and database portion even though there was an Android portion as well.
-            </p>
-          </Bullet>
-        </ProjectTemplate>
-        <ProjectTemplate
-          projectName="Space Invaders Recreation"
-          techStack={["Java", "Swing", "UML"]}
-        >
-          <Bullet>
-            <p>Project for Software Engineering class with a team.</p>
-          </Bullet>
-        </ProjectTemplate>
-      </Dropdown>
-    </Dropdown>
-  )
+				/>
+			</div>
+			<div className="flex flex-col space-y-4">
+				<p className="text-xl">Past Projects:</p>
+				<ProjectTemplate 
+					imageLink="/MovieEDA.png"
+					title="Movie EDA"
+					siteURL="https://movie-eda.streamlit.app/"
+					githubURL="https://github.com/corcordan/movie-eda/"
+					desc="An interactive web app for exploratory data analysis on movies data"
+					tools={["Python", "Pandas", "Matplotlib", "Streamlit"]}
+				/>
+				<ProjectTemplate 
+					imageLink="/K8WalshPortfolio.png"
+					title="K8 Walsh Portfolio"
+					siteURL="https://www.k8walsh.com/"
+					githubURL="https://github.com/corcordan/kw-portfolio"
+					desc="A clean portfolio website for Kate Walsh"
+					tools={["React", "Next.js", "TypeScript", "Tailwind CSS", "Lucide"]}
+				/>
+				<ProjectTemplate 
+					imageLink="/StudyGo.png"
+					title="StudyGo"
+					siteURL="https://studygoonline.com/"
+					desc="Academic social media web app for university students. University capstone project"
+					tools={["PHP", "MySQL", "JavaScript", "HTML", "CSS"]}
+				/>
+			</div>
+		</div>
+	)
 }
 
 export default Projects

@@ -11,7 +11,7 @@ export default function Home() {
 		<div className="flex justify-center">
 			<div className="w-2/5 relative flex flex-col">
 				<Navbar />
-				<main>
+				<main className="mb-8">
 					<Map />
 					<Intro />
 					<ExperienceSnapshot />
